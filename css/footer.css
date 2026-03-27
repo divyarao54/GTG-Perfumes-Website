@@ -51,6 +51,10 @@ footer {
     cursor: pointer;
 }
 
+.footer-item:hover{
+    text-decoration: underline;
+}
+
 .footer-item > span {
     width: fit-content;
     height: 21.24px;
