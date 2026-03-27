@@ -1,0 +1,780 @@
+.catalogue-section{
+    width: 100%;
+    display: flex;
+    padding: 100px 64.125px;
+    align-items: flex-start;
+    gap: 92px;
+}
+
+.catalogue-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 610px;
+}
+
+.carousel {
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 610px;
+    height: 672.99px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: 672.99px;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: block;
+    border-radius: 15.17px;
+}
+
+.carousel-slide img{
+    width: 100%;
+    height: 110%;
+    transform: translateY(-25px);
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    /*gap: 100px;*/
+    justify-content: space-between;
+    width: 580px;
+
+    padding: 8px 16px;
+    border-radius: 999px;
+    
+}
+
+/* Arrows */
+.carousel-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+.prev-button-icon, .next-button-icon{
+    width: 38.9px;
+    height: 38.9px;
+}
+
+/* Dots */
+.carousel-dots {
+    display: flex;
+    width: fit-content;
+    gap: 8px;
+    /*width: 56.63px;*/
+    height: 8.09px;
+}
+
+.carousel-dots button {
+    box-sizing: border-box;
+    width: 8.09px;
+    height: 8.09px;
+    border: 1.01129px solid #032E15;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.carousel-dots button.active {
+    background: #032E15;
+    cursor: default;
+}
+
+.gallery-section {
+    width: 100%;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 30px;
+}
+
+.gallery-item {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crops nicely */
+    display: block;
+    cursor: pointer;
+}
+
+.catalogue-section-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 610px;
+    height: fit-content;
+}
+
+.catalogue-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 31px;
+    width: 610px;
+    height: max-content;
+}
+
+.catalogue-desc-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 610px;
+    height: 148px;
+}
+
+.catalogue-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 610px;
+    height: 68px;
+}
+
+.catalogue-title{
+    width: 254px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #032E15;
+}
+
+.catalogue-review{
+    display: flex;
+    align-items: center;
+}
+
+.catalogue-review img{
+    margin-right: 6px;
+    width: 83.29px;
+    height: 13.11px;
+}
+
+.catalogue-review span{
+    width: 114px;
+    height: 16px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #032E15;
+}
+
+.catalogue-desc{
+    width: 610px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16.1806px;
+    line-height: 20px;
+    text-align: justify;
+    color: #032E15;
+}
+
+.catalogue-subscription-section{
+    display: flex;
+    flex-direction: column;
+    gap: 92px;
+}
+
+.subscription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.subscription-option {
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1.01129px solid #B8B8B8;
+    border-radius: 6.06773px;
+}
+
+/* Hide default radio */
+.subscription-option input, .fragrance-option input {
+    display: none;
+}
+
+.option-wrapper{
+    display: flex;
+    padding: 27px 22px;
+    gap: 13px;
+}
+
+/* Header */
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.option-header:first-child{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.9px;
+    color: #032E15;
+}
+
+.price{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.9px;
+    color: #032E15;
+    width: fit-content;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+    padding-left: 10.11px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+    width: fit-content;
+    color: #B8B8B8;
+}
+
+.divider{
+    width: 100%;
+    display: block;
+    height: 1px;
+    background-color: #919798;
+}
+
+/* Content hidden by default */
+.option-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.option-content > p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16.1806px;
+    line-height: 20px;
+    text-align: justify;
+    color: #032E15;
+    margin: 10px 0 8px 0;
+}
+
+/* Show when checked */
+.subscription-option input:checked ~ .option-wrapper .option-text-wrapper .option-content {
+    max-height: 882px;
+    margin-top: 15px;
+    display: block;
+}
+
+/* Active styling */
+.subscription-option input:checked + .option-header {
+    font-weight: bold;
+}
+
+/* Images */
+.fragrance-options {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.fragrance-option-wrapper{
+    width: 127.11px;
+    height: 145.89px;
+    background: #F9F9F9;
+    border-radius: 4.9494px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.best-seller{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5.58141px 4.9494px;
+    position: absolute;
+    width: 59.9px;
+    height: 12px;
+    right: 0;
+    top: -10px;
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    border-radius: 4.9494px 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7.37px;
+    line-height: 9px;
+    color: #FFFFFF;
+}
+
+.fragrance-text{
+    display: flex;
+    gap: 7px;
+    padding: 9px 0 0 8px;
+}
+
+.fragrance-desc{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.1984px;
+    line-height: 16px;
+    text-align: justify;
+    background: #919798;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.fragrance-option > input:checked + .fragrance-text > .fragrance-desc{
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.fragrance-image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fragrance-options img, .included-img {
+    width: 54.88px;
+    height: 94px;
+}
+
+/* Included section */
+.included {
+    display: flex;
+    gap: 10px;
+}
+
+.included-section-1, .included-section-2 {
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1.01129px solid #919798;
+    border-radius: 6.06773px;
+    height: 219.53px;
+}
+
+.included-section-1{
+    width: 166.73px;
+}
+
+.included-text{
+    padding: 7px 0 0 10px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16.18px;
+    line-height: 20px;
+    text-align: justify;
+    color: #6F7577;
+}
+
+.text-strong{
+    font-weight: 700;
+    color: rgba(3, 46, 21, 1);
+}
+
+.included-imgs-wrapper{
+    display: flex;
+    gap: 46px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+.individual-img-wrapper{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.included-section-2{
+    width: 328.18px;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 20px;
+}
+
+.features > div > span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    letter-spacing: 0.9px;
+    text-transform: capitalize;
+    color: #032E15;
+}
+
+.checkmark{
+    width: 12.25px;
+    height: 12.25px;
+}
+
+.highlighted-img{
+    width: 84.07px;
+    height: 144px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    width: max-content;
+}
+
+/* Outer circle */
+.custom-radio, .custom-radio-2 {
+    width: 18px;
+    height: 18px;
+    background: #00C950;
+    padding: 1px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.custom-radio-2{
+    width: 10.5px;
+    height: 9.63px;
+    background: #919798;
+}
+
+.custom-radio::before, .custom-radio-2::before {
+    content: "";
+    display: block;
+    width: 101%;
+    height: 101%;
+    background: white; /* inner fill */
+    border-radius: 100%;
+}
+
+/* Inner dot (hidden by default) */
+.custom-radio::after, .custom-radio-2::after {
+    content: "";
+    position: absolute;
+    width: 10.5px;
+    height: 10.5px;
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6) 0%, rgba(1, 102, 48, 0.6) 100%);
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 0.2s ease;
+}
+
+.custom-radio-2::after{
+    width: 5.5px;
+    height: 5.3px;
+    opacity: 0.5;
+}
+
+/* Show dot when checked */
+.subscription-option input:checked + .option-wrapper > .custom-radio::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.fragrance-option > input:checked + .fragrance-text > .custom-radio-2::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Active border */
+.subscription-option input:checked + .option-wrapper > .custom-radio {
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6), rgba(1, 102, 48, 0.6));
+}
+
+.fragrance-option > input:checked + .fragrance-text > .custom-radio-2 {
+    background: linear-gradient(180deg, rgba(3, 46, 21, 0.6), rgba(1, 102, 48, 0.6));
+}
+.promotion-header{
+    /* Rectangle 6689 */
+    box-sizing: border-box;
+    display: flex;
+    height: 43.49px;
+    background: linear-gradient(270deg, #032E15 0%, #008236 51.92%, #00C950 100%);
+    /*border: 1.01129px solid #B8B8B8;*/
+    border-radius: 6.06773px 6.06773px 0px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.2258px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.add-to-cart-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12.1355px 24.2709px;
+    width: 100%;
+    height: 52.27px;
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    border-radius: 505.644px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18.2032px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+/* ── Tablet (≤1200px) ── */
+@media (max-width: 1300px) {
+    .catalogue-section {
+        flex-direction: column;
+        padding: 80px 40px;
+        gap: 48px;
+    }
+
+    .catalogue-section-left,
+    .catalogue-section-right,
+    .catalogue-text,
+    .catalogue-desc-section,
+    .catalogue-heading {
+        width: 100%;
+    }
+
+    .catalogue-desc {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .carousel {
+        width: 100%;
+        height: 500px;
+    }
+
+    .carousel-slide {
+        height: 500px;
+    }
+
+    .carousel-controls {
+        width: calc(100% - 32px);
+    }
+}
+
+/* ── Mobile (≤768px) ── */
+@media (max-width: 768px) {
+    .catalogue-section {
+        padding: 48px 20px;
+        gap: 36px;
+    }
+
+    /* Carousel */
+    .carousel {
+        width: 100%;
+        height: 360px;
+    }
+
+    .carousel-slide {
+        height: 360px;
+    }
+
+    .carousel-controls {
+        width: calc(100% - 24px);
+    }
+
+    .prev-button-icon, .next-button-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Gallery — 2 columns on mobile */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    /* Catalogue text */
+    .catalogue-title {
+        width: 100%;
+        font-size: 28px;
+        height: fit-content;
+    }
+
+    .catalogue-desc-section,
+    .catalogue-heading {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .catalogue-desc {
+        width: 100%;
+        height: fit-content;
+        font-size: 14px;
+    }
+
+    /* Subscription options */
+    .option-wrapper {
+        padding: 16px 14px;
+        gap: 10px;
+    }
+
+    .option-header:first-child,
+    .price,
+    .strikethrough {
+        font-size: 15px;
+    }
+
+    .option-content > p {
+        font-size: 14px;
+    }
+
+    /* Fragrance cards — fill available width evenly */
+    .fragrance-options {
+        gap: 8px;
+        margin-top: 14px;
+    }
+
+    .fragrance-option-wrapper {
+        flex: 1;
+        width: auto;
+        height: 130px;
+    }
+
+    .fragrance-options img {
+        width: 44px;
+        height: 76px;
+    }
+
+    /* Included section — stack vertically */
+    .included {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .included-section-1,
+    .included-section-2 {
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 16px;
+    }
+
+    .included-imgs-wrapper {
+        gap: 16px;
+        height: fit-content;
+        padding: 12px 0;
+    }
+
+    .highlighted-img {
+        width: 64px;
+        height: 110px;
+    }
+
+    .included-img {
+        width: 44px;
+        height: 76px;
+    }
+
+    .included-text {
+        font-size: 14px;
+    }
+
+    /* Features list */
+    .features > div > span {
+        font-size: 13px;
+        letter-spacing: 0.4px;
+    }
+
+    .promotion-header {
+        font-size: 16px;
+        height: 38px;
+    }
+
+    .add-to-cart-button {
+        font-size: 16px;
+        height: 48px;
+    }
+
+    /* Expand max-height for taller mobile content */
+    .subscription-option input:checked ~ .option-wrapper .option-text-wrapper .option-content {
+        max-height: 1200px;
+    }
+}
+
+/* ── Small mobile (≤400px) ── */
+@media (max-width: 400px) {
+    .catalogue-section {
+        padding: 40px 16px;
+    }
+
+    .carousel {
+        height: 280px;
+    }
+
+    .carousel-slide {
+        height: 280px;
+    }
+
+    .fragrance-option-wrapper {
+        height: 115px;
+    }
+
+    .fragrance-options img {
+        width: 36px;
+        height: 62px;
+    }
+
+    .option-header:first-child,
+    .price {
+        font-size: 13px;
+    }
+
+    .catalogue-title {
+        font-size: 24px;
+    }
+}

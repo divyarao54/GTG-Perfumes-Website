@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+footer {
+    margin-top: 200px;
+    background: #032E15;
+    width: 100%;
+    padding: 75px;
+    box-sizing: border-box;
+}
+
+.footer-logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42.3237px;
+    line-height: 51px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.footer-section-container {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-section {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 16.18px;
+}
+
+.footer-section:last-of-type {
+    margin-left: 150px;
+    position: relative;
+    top: -20px;
+}
+
+.footer-item,
+.footer-item > span {
+    width: 171.24px;
+    font-family: 'Oxanium', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14.158px;
+    line-height: 150%;
+    color: #FFFFFF;
+    display: flex;
+    gap: 12.14px;
+    height: fit-content;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-item > span {
+    width: fit-content;
+    height: 21.24px;
+}
+
+.footer-item > span > img {
+    width: 24.27px;
+    height: 24.27px;
+}
+
+.footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.1806px;
+    line-height: 150%;
+    color: #FEF3E4;
+}
+
+.footer-email {
+    display: flex;
+    gap: 16.18px;
+}
+
+.footer-email > input {
+    padding: 12.1355px;
+    gap: 8.09px;
+    background: transparent;
+    border: 1.01129px solid #FFFFFF;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16.1806px;
+    line-height: 150%;
+    color: #FFFFFF;
+    min-width: 0; /* prevents input from overflowing flex container */
+    flex: 1;
+}
+
+.footer-email > input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.subscribe-button {
+    padding: 12.1355px 24.2709px;
+    width: 129.54px;
+    height: 48.27px;
+    background: #653B09;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.1806px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.footer-privacy-policy {
+    font-family: 'Oxanium', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12.1355px;
+    line-height: 150%;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+/* ── Tablet (≤1100px) ── */
+@media (max-width: 1100px) {
+    footer {
+        padding: 60px 40px;
+        margin-top: 120px;
+    }
+
+    .footer-section-container {
+        flex-wrap: wrap;
+        gap: 36px;
+    }
+
+    .footer-section:last-of-type {
+        margin-left: 0;
+        top: 0;
+        width: 100%; /* newsletter takes full width on tablet */
+    }
+
+    .footer-item,
+    .footer-item > span {
+        width: fit-content;
+    }
+}
+
+/* ── Mobile (≤768px) ── */
+@media (max-width: 768px) {
+    footer {
+        padding: 48px 24px;
+        margin-top: 80px;
+    }
+
+    .footer-logo {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+
+    .footer-section-container {
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-section:last-of-type {
+        margin-left: 0;
+        top: 0;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        padding-top: 28px;
+    }
+
+    .footer-item,
+    .footer-item > span {
+        width: fit-content;
+        font-size: 15px;
+    }
+
+    .footer-title {
+        font-size: 15px;
+    }
+
+    /* Stack email input + button vertically */
+    .footer-email {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-email > input {
+        width: 100%;
+        font-size: 15px;
+        padding: 14px 12px;
+        box-sizing: border-box;
+    }
+
+    .subscribe-button {
+        width: 100%;
+        height: 48px;
+        font-size: 15px;
+    }
+
+    .footer-privacy-policy {
+        font-size: 11px;
+    }
+}
+
+/* ── Small mobile (≤400px) ── */
+@media (max-width: 400px) {
+    footer {
+        padding: 40px 16px;
+    }
+
+    .footer-logo {
+        font-size: 28px;
+    }
+}

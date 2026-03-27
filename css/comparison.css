@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+.comparison-section,
+.comparison-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-decoration {
+    width: 679.58px;
+    height: 50px;
+    font-family: 'Oxanium', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    color: #032E15;
+}
+
+.comparison-title {
+    height: 44px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #032E15;
+}
+
+.comparison-table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* horizontal scroll on small screens */
+    -webkit-overflow-scrolling: touch;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    min-width: 480px; /* prevents columns from collapsing too far */
+}
+
+td, th {
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(102, 102, 102, 1);
+}
+
+td {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+tr > td:first-of-type,
+tr > th:first-of-type {
+    text-align: left;
+    width: fit-content;
+}
+
+tr > th:first-of-type {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #322D2D;
+}
+
+tr > td:first-of-type {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+}
+
+th > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.table-img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.table-img {
+    width: 88px;
+    height: 87px;
+    border-radius: 15px;
+}
+
+th > div > div {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 19px;
+    color: #666666;
+}
+
+.highlighted {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+td > img {
+    width: 27.8px;
+    height: 27.8px;
+    border-radius: 33.9055px;
+}
+
+.green {
+    background-color: rgba(240, 253, 244, 1);
+    border-bottom: 1px dashed rgba(50, 45, 45, 1);
+}
+
+.call-to-action-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12.1355px 24.2709px;
+    width: 194.54px;
+    height: 56.27px;
+    background: linear-gradient(180deg, #032E15 0%, #016630 100%);
+    border-radius: 505.644px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+/* ── Tablet (≤1024px) ── */
+@media (max-width: 1024px) {
+    table {
+        width: 90%;
+    }
+
+    .divider-decoration {
+        width: auto;
+        font-size: 32px;
+    }
+
+    .comparison-title {
+        font-size: 30px;
+        height: fit-content;
+        text-align: center;
+    }
+}
+
+/* ── Mobile (≤768px) ── */
+@media (max-width: 768px) {
+    .comparison-section,
+    .comparison-section div {
+        gap: 24px;
+    }
+
+    .comparison-table-wrapper {
+        padding: 0 16px;
+        /* Hint to user that table is scrollable */
+        background:
+            linear-gradient(to right, white 30%, rgba(255,255,255,0)),
+            linear-gradient(to left, white 30%, rgba(255,255,255,0)) 100% 0;
+        background-attachment: local, local;
+    }
+
+    table {
+        width: 100%;
+        min-width: 480px;
+    }
+
+    td, th {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    tr > td:first-of-type,
+    tr > th:first-of-type {
+        font-size: 13px;
+        min-width: 100px;
+    }
+
+    .table-img {
+        width: 52px;
+        height: 52px;
+        border-radius: 10px;
+    }
+
+    .heading-subtitle {
+        font-size: 11px;
+    }
+
+    .highlighted {
+        font-size: 15px;
+    }
+
+    td > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .divider-decoration {
+        font-size: 26px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .comparison-title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .call-to-action-button {
+        width: 100%;
+        max-width: 300px;
+        font-size: 17px;
+    }
+}
+
+/* ── Small mobile (≤400px) ── */
+@media (max-width: 400px) {
+    td, th {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+
+    .table-img {
+        width: 40px;
+        height: 40px;
+    }
+}
