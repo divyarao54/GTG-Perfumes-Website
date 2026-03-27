@@ -25,14 +25,22 @@
 }
 
 .stat-number {
-    font-size: 36px;
+    font-style: normal;
     font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
     margin-bottom: 10px;
 }
 
 .stat-text {
-    font-size: 12px;
-    opacity: 0.9;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 @media (max-width: 500px) {
